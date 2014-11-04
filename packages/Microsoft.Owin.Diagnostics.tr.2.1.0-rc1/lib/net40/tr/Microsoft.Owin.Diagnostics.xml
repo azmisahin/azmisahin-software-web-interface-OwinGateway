@@ -1,0 +1,220 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<doc>
+  <assembly>
+    <name>Microsoft.Owin.Diagnostics</name>
+  </assembly>
+  <members>
+    <member name="T:Microsoft.Owin.Diagnostics.ErrorPageMiddleware">
+      <summary>Bir hata sayfası ara yazılımını temsil eder.</summary>
+    </member>
+    <member name="M:Microsoft.Owin.Diagnostics.ErrorPageMiddleware.#ctor(Microsoft.Owin.OwinMiddleware,Microsoft.Owin.Diagnostics.ErrorPageOptions,System.Boolean)"></member>
+    <member name="M:Microsoft.Owin.Diagnostics.ErrorPageMiddleware.Invoke(Microsoft.Owin.IOwinContext)"></member>
+    <member name="T:Microsoft.Owin.Diagnostics.ErrorPageOptions">
+      <summary>Represents an error page options.</summary>
+    </member>
+    <member name="M:Microsoft.Owin.Diagnostics.ErrorPageOptions.#ctor">
+      <summary>Initializes a new instance of the <see cref="T:Microsoft.Owin.Diagnostics.ErrorPageOptions" /> class.</summary>
+    </member>
+    <member name="M:Microsoft.Owin.Diagnostics.ErrorPageOptions.SetDefaultVisibility(System.Boolean)"></member>
+    <member name="P:Microsoft.Owin.Diagnostics.ErrorPageOptions.ShowAll"></member>
+    <member name="P:Microsoft.Owin.Diagnostics.ErrorPageOptions.ShowCookies"></member>
+    <member name="P:Microsoft.Owin.Diagnostics.ErrorPageOptions.ShowEnvironment"></member>
+    <member name="P:Microsoft.Owin.Diagnostics.ErrorPageOptions.ShowExceptionDetails"></member>
+    <member name="P:Microsoft.Owin.Diagnostics.ErrorPageOptions.ShowHeaders"></member>
+    <member name="P:Microsoft.Owin.Diagnostics.ErrorPageOptions.ShowQuery"></member>
+    <member name="P:Microsoft.Owin.Diagnostics.ErrorPageOptions.ShowSourceCode"></member>
+    <member name="P:Microsoft.Owin.Diagnostics.ErrorPageOptions.SourceCodeLineCount">
+      <summary>Gets or sets the source code line count.</summary>
+      <returns>The source code line count.</returns>
+    </member>
+    <member name="T:Microsoft.Owin.Diagnostics.WelcomePageMiddleware">
+      <summary>Bir karşılama sayfası ara yazılımını temsil eder.</summary>
+    </member>
+    <member name="M:Microsoft.Owin.Diagnostics.WelcomePageMiddleware.#ctor(Microsoft.Owin.OwinMiddleware,Microsoft.Owin.Diagnostics.WelcomePageOptions)"></member>
+    <member name="M:Microsoft.Owin.Diagnostics.WelcomePageMiddleware.Invoke(Microsoft.Owin.IOwinContext)"></member>
+    <member name="T:Microsoft.Owin.Diagnostics.WelcomePageOptions">
+      <summary>Karşılama sayfası seçeneklerini temsil eder.</summary>
+    </member>
+    <member name="M:Microsoft.Owin.Diagnostics.WelcomePageOptions.#ctor">
+      <summary>
+        <see cref="T:Microsoft.Owin.Diagnostics.WelcomePageOptions" /> sınıfının yeni bir örneğini başlatır.</summary>
+    </member>
+    <member name="P:Microsoft.Owin.Diagnostics.WelcomePageOptions.Path">
+      <summary>Karşılama sayfası ile ilişkili yolu alır veya ayarlar.</summary>
+      <returns>Karşılama sayfası ile ilişkili yol.</returns>
+    </member>
+    <member name="T:Microsoft.Owin.Diagnostics.Views.BaseView">
+      <summary>Infrastructure</summary>
+    </member>
+    <member name="M:Microsoft.Owin.Diagnostics.Views.BaseView.#ctor"></member>
+    <member name="P:Microsoft.Owin.Diagnostics.Views.BaseView.Context">
+      <summary>The request context</summary>
+    </member>
+    <member name="M:Microsoft.Owin.Diagnostics.Views.BaseView.Execute">
+      <summary>Execute an individual request</summary>
+    </member>
+    <member name="M:Microsoft.Owin.Diagnostics.Views.BaseView.Execute(Microsoft.Owin.IOwinContext)">
+      <summary>Execute an individual request</summary>
+    </member>
+    <member name="P:Microsoft.Owin.Diagnostics.Views.BaseView.Output">
+      <summary>The output stream</summary>
+    </member>
+    <member name="P:Microsoft.Owin.Diagnostics.Views.BaseView.Request">
+      <summary>The request</summary>
+    </member>
+    <member name="P:Microsoft.Owin.Diagnostics.Views.BaseView.Response">
+      <summary>The response</summary>
+    </member>
+    <member name="M:Microsoft.Owin.Diagnostics.Views.BaseView.Write(System.Object)">
+      <summary>Convert to string and html encode</summary>
+    </member>
+    <member name="M:Microsoft.Owin.Diagnostics.Views.BaseView.Write(System.String)">
+      <summary>Html encode and write</summary>
+    </member>
+    <member name="M:Microsoft.Owin.Diagnostics.Views.BaseView.WriteAttribute``1(System.String,System.Tuple{System.String,System.Int32},System.Tuple{System.String,System.Int32},System.Tuple{System.Tuple{System.String,System.Int32},System.Tuple{``0,System.Int32},System.Boolean})">
+      <typeparam name="T1"></typeparam>
+    </member>
+    <member name="M:Microsoft.Owin.Diagnostics.Views.BaseView.WriteAttribute``2(System.String,System.Tuple{System.String,System.Int32},System.Tuple{System.String,System.Int32},System.Tuple{System.Tuple{System.String,System.Int32},System.Tuple{``0,System.Int32},System.Boolean},System.Tuple{System.Tuple{System.String,System.Int32},System.Tuple{``1,System.Int32},System.Boolean})">
+      <typeparam name="T1"></typeparam>
+      <typeparam name="T2"></typeparam>
+    </member>
+    <member name="M:Microsoft.Owin.Diagnostics.Views.BaseView.WriteAttribute``3(System.String,System.Tuple{System.String,System.Int32},System.Tuple{System.String,System.Int32},System.Tuple{System.Tuple{System.String,System.Int32},System.Tuple{``0,System.Int32},System.Boolean},System.Tuple{System.Tuple{System.String,System.Int32},System.Tuple{``1,System.Int32},System.Boolean},System.Tuple{System.Tuple{System.String,System.Int32},System.Tuple{``2,System.Int32},System.Boolean})">
+      <typeparam name="T1"></typeparam>
+      <typeparam name="T2"></typeparam>
+      <typeparam name="T3"></typeparam>
+    </member>
+    <member name="M:Microsoft.Owin.Diagnostics.Views.BaseView.WriteAttribute``4(System.String,System.Tuple{System.String,System.Int32},System.Tuple{System.String,System.Int32},System.Tuple{System.Tuple{System.String,System.Int32},System.Tuple{``0,System.Int32},System.Boolean},System.Tuple{System.Tuple{System.String,System.Int32},System.Tuple{``1,System.Int32},System.Boolean},System.Tuple{System.Tuple{System.String,System.Int32},System.Tuple{``2,System.Int32},System.Boolean},System.Tuple{System.Tuple{System.String,System.Int32},System.Tuple{``3,System.Int32},System.Boolean})">
+      <typeparam name="T1"></typeparam>
+      <typeparam name="T2"></typeparam>
+      <typeparam name="T3"></typeparam>
+      <typeparam name="T4"></typeparam>
+    </member>
+    <member name="M:Microsoft.Owin.Diagnostics.Views.BaseView.WriteAttribute``5(System.String,System.Tuple{System.String,System.Int32},System.Tuple{System.String,System.Int32},System.Tuple{System.Tuple{System.String,System.Int32},System.Tuple{``0,System.Int32},System.Boolean},System.Tuple{System.Tuple{System.String,System.Int32},System.Tuple{``1,System.Int32},System.Boolean},System.Tuple{System.Tuple{System.String,System.Int32},System.Tuple{``2,System.Int32},System.Boolean},System.Tuple{System.Tuple{System.String,System.Int32},System.Tuple{``3,System.Int32},System.Boolean},System.Tuple{System.Tuple{System.String,System.Int32},System.Tuple{``4,System.Int32},System.Boolean})">
+      <typeparam name="T1"></typeparam>
+      <typeparam name="T2"></typeparam>
+      <typeparam name="T3"></typeparam>
+      <typeparam name="T4"></typeparam>
+      <typeparam name="T5"></typeparam>
+    </member>
+    <member name="M:Microsoft.Owin.Diagnostics.Views.BaseView.WriteAttribute``6(System.String,System.Tuple{System.String,System.Int32},System.Tuple{System.String,System.Int32},System.Tuple{System.Tuple{System.String,System.Int32},System.Tuple{``0,System.Int32},System.Boolean},System.Tuple{System.Tuple{System.String,System.Int32},System.Tuple{``1,System.Int32},System.Boolean},System.Tuple{System.Tuple{System.String,System.Int32},System.Tuple{``2,System.Int32},System.Boolean},System.Tuple{System.Tuple{System.String,System.Int32},System.Tuple{``3,System.Int32},System.Boolean},System.Tuple{System.Tuple{System.String,System.Int32},System.Tuple{``4,System.Int32},System.Boolean},System.Tuple{System.Tuple{System.String,System.Int32},System.Tuple{``5,System.Int32},System.Boolean})">
+      <typeparam name="T1"></typeparam>
+      <typeparam name="T2"></typeparam>
+      <typeparam name="T3"></typeparam>
+      <typeparam name="T4"></typeparam>
+      <typeparam name="T5"></typeparam>
+      <typeparam name="T6"></typeparam>
+    </member>
+    <member name="M:Microsoft.Owin.Diagnostics.Views.BaseView.WriteLiteral(System.String)">
+      <summary>Write the given value directly to the output</summary>
+    </member>
+    <member name="T:Microsoft.Owin.Diagnostics.Views.DiagnosticsPage"></member>
+    <member name="M:Microsoft.Owin.Diagnostics.Views.DiagnosticsPage.#ctor"></member>
+    <member name="M:Microsoft.Owin.Diagnostics.Views.DiagnosticsPage.Execute"></member>
+    <member name="T:Microsoft.Owin.Diagnostics.Views.ErrorDetails">
+      <summary>Contains details for individual exception messages.</summary>
+    </member>
+    <member name="M:Microsoft.Owin.Diagnostics.Views.ErrorDetails.#ctor"></member>
+    <member name="P:Microsoft.Owin.Diagnostics.Views.ErrorDetails.Error">
+      <summary>An individual exception.</summary>
+      <returns>Returns <see cref="T:System.Exception" />.</returns>
+    </member>
+    <member name="P:Microsoft.Owin.Diagnostics.Views.ErrorDetails.StackFrames">
+      <summary>The generated stack frames.</summary>
+      <returns>Returns <see cref="T:System.Collections.Generic.IEnumerable`1" />.</returns>
+    </member>
+    <member name="T:Microsoft.Owin.Diagnostics.Views.ErrorPage"></member>
+    <member name="M:Microsoft.Owin.Diagnostics.Views.ErrorPage.#ctor"></member>
+    <member name="M:Microsoft.Owin.Diagnostics.Views.ErrorPage.Execute"></member>
+    <member name="P:Microsoft.Owin.Diagnostics.Views.ErrorPage.Model">
+      <returns>Returns <see cref="T:Microsoft.Owin.Diagnostics.Views.ErrorPageModel" />.</returns>
+    </member>
+    <member name="T:Microsoft.Owin.Diagnostics.Views.ErrorPageModel">
+      <summary>Provides model for <see cref="T:Microsoft.Owin.Diagnostics.Views.ErrorPage" />.</summary>
+    </member>
+    <member name="M:Microsoft.Owin.Diagnostics.Views.ErrorPageModel.#ctor">
+      <summary>Initializes a new instance of the <see cref="T:Microsoft.Owin.Diagnostics.Views.ErrorPageModel" /> class.</summary>
+    </member>
+    <member name="P:Microsoft.Owin.Diagnostics.Views.ErrorPageModel.Cookies">
+      <summary>Gets or sets the collection of request cookie.</summary>
+      <returns>The collection of request cookie.</returns>
+    </member>
+    <member name="P:Microsoft.Owin.Diagnostics.Views.ErrorPageModel.Environment">
+      <summary>Gets or sets the OWIN environment.</summary>
+      <returns>The OWIN environment.</returns>
+    </member>
+    <member name="P:Microsoft.Owin.Diagnostics.Views.ErrorPageModel.ErrorDetails">
+      <summary>Detailed information about each exception in the stack.</summary>
+      <returns>Returns <see cref="T:System.Collections.Generic.IEnumerable`1" />.</returns>
+    </member>
+    <member name="P:Microsoft.Owin.Diagnostics.Views.ErrorPageModel.Headers">
+      <summary>Gets or sets the response headers.</summary>
+      <returns>A <see cref="T:System.Collections.Generic.IDictionary`2" /> object that represents the response headers.</returns>
+    </member>
+    <member name="P:Microsoft.Owin.Diagnostics.Views.ErrorPageModel.Options">
+      <summary>Options for what output to display.</summary>
+      <returns>Returns <see cref="T:Microsoft.Owin.Diagnostics.ErrorPageOptions" />.</returns>
+    </member>
+    <member name="P:Microsoft.Owin.Diagnostics.Views.ErrorPageModel.Query">
+      <summary>Gets or sets the request query string.</summary>
+      <returns>The request query string.</returns>
+    </member>
+    <member name="T:Microsoft.Owin.Diagnostics.Views.StackFrame">
+      <summary>Detailed exception stack information used to generate a view</summary>
+    </member>
+    <member name="M:Microsoft.Owin.Diagnostics.Views.StackFrame.#ctor"></member>
+    <member name="P:Microsoft.Owin.Diagnostics.Views.StackFrame.ContextCode">
+      <returns>Returns <see cref="T:System.String" />.</returns>
+    </member>
+    <member name="P:Microsoft.Owin.Diagnostics.Views.StackFrame.File">
+      <returns>Returns <see cref="T:System.String" />.</returns>
+    </member>
+    <member name="P:Microsoft.Owin.Diagnostics.Views.StackFrame.Function">
+      <returns>Returns <see cref="T:System.String" />.</returns>
+    </member>
+    <member name="P:Microsoft.Owin.Diagnostics.Views.StackFrame.Line">
+      <returns>Returns <see cref="T:System.Int32" />.</returns>
+    </member>
+    <member name="P:Microsoft.Owin.Diagnostics.Views.StackFrame.PostContextCode">
+      <returns>Returns <see cref="T:System.Collections.Generic.IEnumerable`1" />.</returns>
+    </member>
+    <member name="P:Microsoft.Owin.Diagnostics.Views.StackFrame.PreContextCode">
+      <returns>Returns <see cref="T:System.Collections.Generic.IEnumerable`1" />.</returns>
+    </member>
+    <member name="P:Microsoft.Owin.Diagnostics.Views.StackFrame.PreContextLine">
+      <returns>Returns <see cref="T:System.Int32" />.</returns>
+    </member>
+    <member name="T:Microsoft.Owin.Diagnostics.Views.WelcomePage"></member>
+    <member name="M:Microsoft.Owin.Diagnostics.Views.WelcomePage.#ctor"></member>
+    <member name="M:Microsoft.Owin.Diagnostics.Views.WelcomePage.Execute"></member>
+    <member name="T:Owin.ErrorPageExtensions">
+      <summary>Hata sayfası için genişletme yöntemleri sağlar.</summary>
+    </member>
+    <member name="M:Owin.ErrorPageExtensions.UseErrorPage(Owin.IAppBuilder)">
+      <summary>Ardışık düzendeki zaman uyumlu ve zaman uyumsuz özel durumları yakalar ve HTML hata yanıtları oluşturur.</summary>
+      <returns>Oluşturulan hata sayfası.</returns>
+      <param name="builder">Uygulama oluşturucu.</param>
+    </member>
+    <member name="M:Owin.ErrorPageExtensions.UseErrorPage(Owin.IAppBuilder,Microsoft.Owin.Diagnostics.ErrorPageOptions)"></member>
+    <member name="T:Owin.WelcomePageExtensions">
+      <summary>Karşılama sayfasını göstermek için kullanılan genişletme yöntemlerini temsil eder.</summary>
+    </member>
+    <member name="M:Owin.WelcomePageExtensions.UseWelcomePage(Owin.IAppBuilder)">
+      <summary>Karşılama sayfasında çalışması gerektiğini belirtmek üzere diğer ara yazılımdan sonra çağrılır.</summary>
+      <returns>Karşılama sayfası.</returns>
+      <param name="builder">Uygulama oluşturucu.</param>
+    </member>
+    <member name="M:Owin.WelcomePageExtensions.UseWelcomePage(Owin.IAppBuilder,Microsoft.Owin.Diagnostics.WelcomePageOptions)">
+      <summary>Karşılama sayfasında çalışması gerektiğini belirtmek üzere diğer ara yazılımdan sonra çağrılır.</summary>
+      <returns>Karşılama sayfası.</returns>
+      <param name="builder">Uygulama oluşturucu.</param>
+      <param name="options">Karşılama sayfası seçenekleri.</param>
+    </member>
+    <member name="M:Owin.WelcomePageExtensions.UseWelcomePage(Owin.IAppBuilder,Microsoft.Owin.PathString)"></member>
+    <member name="M:Owin.WelcomePageExtensions.UseWelcomePage(Owin.IAppBuilder,System.String)">
+      <summary>Karşılama sayfasında çalışması gerektiğini belirtmek üzere diğer ara yazılımdan sonra çağrılır.</summary>
+      <returns>Karşılama sayfası.</returns>
+      <param name="builder">Uygulama oluşturucu.</param>
+      <param name="path">Karşılama sayfasını gösteren yol.</param>
+    </member>
+  </members>
+</doc>

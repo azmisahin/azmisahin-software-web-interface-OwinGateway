@@ -1,0 +1,2 @@
+﻿-Statics Log Record
+-Permision Write
